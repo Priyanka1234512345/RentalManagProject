@@ -1,0 +1,20 @@
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" style="color: azure;">RENTAL MANAGMENT SYSTEM</a>
+ 
+    <label style="color: azure;margin-right: -342px;">Select Location</label>
+    <select class='select-option' 
+     (change)='onOptionsSelected($event)'>
+   <option class='option' *ngFor='let l of location' 
+   [value]="l.name">{{l.name}}</option>
+</select>
+<select class='select-option' 
+     (change)='onOptionsSelectedBranch($event)'>
+   <option class='option' *ngFor='let l of branch' 
+   [value]="l.name">{{l.name}}</option>
+</select>
+
+  </nav> 
+
+
+
+
